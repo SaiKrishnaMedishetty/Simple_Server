@@ -17,8 +17,8 @@ def add_numbers():
     except ValueError:
         return jsonify({'error': 'num1 and num2 must be numbers'}), 400
 
-    result = num1 + num2
+    result = num1-num2
     return jsonify({'sum': result})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
